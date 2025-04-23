@@ -1,5 +1,5 @@
 rocket_controller:
-  type: effort_controllers/JointTrajectoryController
+  type: position_controllers/JointTrajectoryController
   joints:
     - rocket_shoulder_pan_joint
     - rocket_shoulder_lift_joint
@@ -39,7 +39,7 @@ rocket_controller:
       i: 1
       i_clamp: 1
 groot_controller:
-  type: effort_controllers/JointTrajectoryController
+  type: position_controllers/JointTrajectoryController
   joints:
     - groot_shoulder_pan_joint
     - groot_shoulder_lift_joint
@@ -79,7 +79,7 @@ groot_controller:
       i: 1
       i_clamp: 1
 rocket_and_groot_controller:
-  type: effort_controllers/JointTrajectoryController
+  type: position_controllers/JointTrajectoryController
   joints:
     - groot_shoulder_pan_joint
     - groot_shoulder_lift_joint
